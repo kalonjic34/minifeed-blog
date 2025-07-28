@@ -20,10 +20,13 @@
     <main>
         <section>
             <h1>Add new entry</h1>
-            <form action="/entry" method="get">
-                <label for="sample-field">Sample</label>
-                <input type="text" name="sample" id="sample-field">
-                <button>Submit</button>
+            <form action="/entry" class="form" method="post">
+                <p class="form-input">
+                    <label for="entry" class="form-label">Entry contents:</label>
+                    <textarea name="content" class="form-textarea" id="entry"></textarea>
+
+                </p>
+                <button class="form-submit">Submit</button>
             </form>
         </section>
         <section>
