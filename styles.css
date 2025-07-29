@@ -2,6 +2,11 @@
     box-sizing: inherit;
 }
 
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .navbar{
     max-width: 630px;
     margin: 60px auto;
@@ -82,4 +87,70 @@ form{
 
 .form-submit:hover{
     background-color: #18c1e1;
+}
+
+.entry{
+    margin-top: 50px;
+}
+
+.entry-title{
+    display: inline;
+    font-size: 19px;
+}
+
+.entry-date{
+    color: #667c74;
+}
+
+.entry-content{
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.footer{
+    background-color: #2f3a3d;
+    padding: 40px 0;
+    margin-top: 50px;
+    border-top: 4px solid black;
+    /* color: white;
+    font-size: 12px; */
+}
+
+.footer-content{
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .left-section{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .right-section{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer a{
+    color: white;
+    font-size: 12px;  
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.footer-item{
+    margin-bottom: 5px;
+
 }
