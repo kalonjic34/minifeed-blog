@@ -39,15 +39,17 @@
         </section>
         <section>
             <h1>Recent Posts</h1>
+            {% for entry in entries %}
             <article class="entry">
                 <div>
-                    <h2 class="entry-title">Had a relatively relaxed day today.</h2>
-                    <time class="entry-date" datetime="25-07-2025">July 25</time>
+                    <h2 class="entry-title">{{entry[0] | truncate(30, true)}}.</h2>
+                    <time class="entry-date" datetime="25-07-2025">{{entry[1] }}</time>
                 </div>
                 <p class="entry-content">
-                    Didn't get much programming done today, but that's alright — can't be amazing every single day!
+                    {{entry[0] }}
                 </p>
             </article>
+            {% endfor %}
         </section>
 
     </main>
